@@ -31,7 +31,7 @@ pipeline {
                 sh '''
                     echo "Test stage ..."
                     test -f build/index.html
-                    CI=true npm test -- --watchAll=false
+                    npm test
                 '''
             }
         }
