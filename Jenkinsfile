@@ -16,6 +16,7 @@ pipeline {
             }
             steps {
                 sh '''
+                    echo "small change to trigger polling"
                     ls -la
                     node --version
                     npm --version
